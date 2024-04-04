@@ -1,4 +1,4 @@
-# Cat Bot [![Discord Server](https://img.shields.io/discord/966586000417619998?label=discord&logo=discord)](https://discord.gg/cat-stand-966586000417619998)
+# Dog Bot [![Discord Server](https://img.shields.io/discord/966586000417619998?label=discord&logo=discord)](https://discord.gg/cat-stand-966586000417619998)
 Discord Cat Bot Source Code
 
 # Setup
@@ -13,12 +13,14 @@ Discord Cat Bot Source Code
 1. Clone the repository. You can use green "Code" button at the top or a git command:
 
    `git clone https://github.com/milena-kos/cat-bot.git`
+   this is original repository.
+   
 
-2. Install requirements:
+3. Install requirements:
 
    `pip install -r requirements.txt`
 
-3. Create a `db.json` file. Here is a template of an empty db:
+4. Create a `db.json` file. Here is a template of an empty db:
 
    `{"cat": {}, "summon_ids": [], "0": {}, "cattype": {}}`
 
