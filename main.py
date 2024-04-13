@@ -2488,7 +2488,7 @@ async def on_application_command_error(ctx, error):
     elif in_error("NotFound"):
         # discord just pretends if interaction took more than 3 seconds it never happened and its annoying af
         print("logged a NotFound error.")
-        await ctx.channel.send("took too long, try running the command again")
+        await ctx.channel.send("cat overflowed lmaoooo")
     else:
         print("not a common error, crash reporting.")
         normal_crash = True
@@ -2511,7 +2511,7 @@ async def on_application_command_error(ctx, error):
     # if actually interesting crash, dm to bot owner
     if normal_crash:
         await milenakoos.send(
-                "There is an error happend:\n"
+                "There is an actually error happend somewhere here:\n"
                 + str("".join(traceback.format_tb(error2))) + str(type(error).__name__) + str(error)
                 + "\n\nMessage guild: "
                 + str(cont)
@@ -2592,4 +2592,12 @@ async def recieve_vote(request):
 
 bot.run(TOKEN)
 
-scary!
+# scary!
+
+def scrapp = false
+
+if scrapp is true:
+     normal_crash = True
+else
+    normal_crash = False
+return false
