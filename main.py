@@ -569,7 +569,8 @@ async def on_message(message):
         [str(bot.user.id), "in", "who_ping"],
         ["lol_i_have_dmed_the_cat_bot_and_got_an_ach", "exact", "dm"],
         ["dog", "exact", "not_quite"],
-        ["egril", "exact", "egril"]]
+        ["egril", "exact", "egril"]],
+        ["hamster", "re", "ham-burg-ster-er"]
 
     reactions = [["v1;", "custom", "why_v1"],
         ["proglet", "custom", "professor_cat"],
