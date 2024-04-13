@@ -40,7 +40,6 @@ WHITELISTED_BOTS = [] # bots which are allowed to catch cats
 # use if bot is in a team
 # if you dont know what that is or dont use it,
 # you can remove this line
-OWNER_ID = 553093932012011520 
 
 ### Setup values end
 
@@ -51,6 +50,7 @@ type_dict = {
     "Fine": 1000,
     "Nice": 750,
     "Good": 500,
+    "Common": "400",
     "Rare": 350,
     "Wild": 275,
     "Baby": 230,
@@ -70,6 +70,7 @@ type_dict = {
     "Real": 5,
     "Ultimate": 3,
     "eGirl": 2
+    "Unknown": 1
 }
 
 # create a huge list where each cat type is multipled the needed amount of times
@@ -2523,6 +2524,7 @@ async def claim_reward(user, channeley, type):
     vote_choices = [
         *([["Fine", 10]] * 1000),
         *([["Good", 5]] * 500),
+       *([["Common", 5]] * 300),
         *([["Epic", 3]] * 400),
         *([["Brave", 2]] * 300),
         *([["TheTrashCell", 2]] * 200),
@@ -2546,10 +2548,10 @@ async def claim_reward(user, channeley, type):
     current_day = datetime.datetime.utcnow().isoweekday()
 
     weekend_message = ""
-    if current_day == 6 or current_day == 7:
+    if current_day == 1 or current_day == 2:
         num_amount = amount * 2
         amount = f"~~{amount}~~ **{amount*2}**"
-        weekend_message = "🌟 **It's weekend! All vote rewards are DOUBLED!**\n\n" 
+        weekend_message = "🌟 **It'sa Week start! All rewards are DOUBLED!**\n\n" 
     
     add_cat(channeley.guild.id, user, cattype, num_amount)
     embedVar = discord.Embed(title="Vote redeemed!", description=f"{weekend_message}You have recieved {icon} {amount} {cattype} cats for voting on {cool_name}.\nVote again in 12 hours.", color=0x007F0E)
@@ -2588,3 +2590,5 @@ async def recieve_vote(request):
 
 
 bot.run(TOKEN)
+
+scary!
